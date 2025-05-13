@@ -1,11 +1,19 @@
 <H1>Game To Join List</H1>
 
 <div class="container">
+  <div *ngFor="let game of games" class="row">
+    <label class="col-md-2">{{game.player1Name}}</label>
+    <button class="col-md-2"
+            routerLink="/join-game/{{game.id}}">Join</button>
+  </div>
+
+  <br/>
+  <span>using Angular 17...</span>
   <br/>
   @for(game of games; track game.id) {
     <div class="row">
       <label class="col-md-2">{{game.player1Name}}</label>
-      <button class="col-md-2">Join</button>
+      <button class="col-md-2" (click)="onClickJoin(game.id)">Join</button>
     </div>
   }
 </div>

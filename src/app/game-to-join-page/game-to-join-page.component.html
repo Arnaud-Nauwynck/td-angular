@@ -1,1 +1,12 @@
-<p>game-to-join-page works!</p>
+<H1>Game #{{gameId}} To Join </H1>
+
+<div class="container">
+  <div class="row">
+    <label class="col-md-2">Player 2 Name</label>
+    <input class="col-md-4" type="text"
+           [(ngModel)]="player2Name">
+  </div>
+  <div class="row">
+    <button class="col-md-2"
+            (click)="joinGame()">Join Game</button>
+  </div>
