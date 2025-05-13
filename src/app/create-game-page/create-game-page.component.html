@@ -1,0 +1,18 @@
+<H1>Create Game</H1>
+
+<div class="container">
+  <div class="row">
+    <label class="col-md-2">Player Name</label>
+    <input class="col-md-4" type="text"
+           [(ngModel)]="player1Name">
+  </div>
+  <div class="row">
+    <label class="col-md-2">Blitz Minute Duration</label>
+    <input class="col-md-4" type="number"
+            [(ngModel)]="blitzMinuteDuration">
+  </div>
+  <div class="row">
+    <button class="col-md-2"
+            (click)="createGame()">Create Game</button>
+  </div>
+</div>
