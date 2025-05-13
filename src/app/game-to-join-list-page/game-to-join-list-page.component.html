@@ -1,0 +1,11 @@
+<H1>Game To Join List</H1>
+
+<div class="container">
+  <br/>
+  @for(game of games; track game.id) {
+    <div class="row">
+      <label class="col-md-2">{{game.player1Name}}</label>
+      <button class="col-md-2">Join</button>
+    </div>
+  }
+</div>
